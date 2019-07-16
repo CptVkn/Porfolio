@@ -1,4 +1,5 @@
 .menu {
+  background: #d1cfcf;
   position: fixed;
   display: flex;
   flex-flow: column wrap;
@@ -23,16 +24,58 @@
         transform: scale(1.3);
         transition: all 0.75s ease-out; }
 
+.showcase .resume {
+  background: blue;
+  position: absolute;
+  visibility: hidden; }
+
+.showcase {
+  background: #d1cfcf;
+  border: solid;
+  border-color: #5e5e5e;
+  border-radius: 25px;
+  width: 80%;
+  margin: auto;
+  margin-top: 7.5vh;
+  padding: 2rem; }
+  .showcase .projects {
+    position: absolute;
+    visibility: hidden; }
+    .showcase .projects.show {
+      visibility: visible;
+      position: relative; }
+  .showcase .resume {
+    position: absolute;
+    visibility: hidden; }
+    .showcase .resume.show {
+      visibility: visible;
+      position: relative; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  background: #d1cfcf;
+  position: relative;
   height: 100%;
+  background: #d1cfcf;
   font-family: Roboto Mono;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 1em; }
+  body#bg-img {
+    background: url(../img/background.PNG);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(209, 207, 207, 0.9); }
 
 .header {
   color: #5e5e5e;
@@ -56,12 +99,3 @@ body {
         .header .icons a:hover i {
           transform: scale(1.3);
           transition: all 0.75s ease-out; }
-
-.showcase {
-  border: solid;
-  border-color: #5e5e5e;
-  border-radius: 25px;
-  width: 80%;
-  margin: auto;
-  margin-top: 10vh;
-  padding: 2rem; }

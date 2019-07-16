@@ -1,0 +1,28 @@
+@import "showcaseResume";
+
+.showcase {
+  background: rgba($primary-color, 1);
+  border: solid;
+  border-color: $thirdary-color;
+  border-radius: 25px;
+  width: 80%;
+  margin: auto;
+  margin-top: 7.5vh;
+  padding: 2rem;
+  .projects {
+    position: absolute;
+    visibility: hidden;
+    &.show {
+      visibility: visible;
+      position: relative;
+    }
+  }
+  .resume {
+    position: absolute;
+    visibility: hidden;
+    &.show {
+      visibility: visible;
+      position: relative;
+    }
+  }
+}

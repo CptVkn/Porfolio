@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "showcase";
 
 * {
   margin: 0;
@@ -8,10 +9,13 @@
 }
 
 body {
-  background: $primary-color;
+  position: relative;
   height: 100%;
+  @include background();
+  background: $primary-color;
   font-family: Roboto Mono;
   line-height: 1.5;
+  font-size: 1em;
 }
 
 .header {
@@ -38,7 +42,6 @@ body {
       text-decoration: none;
       &:hover {
         color: $secondary-color;
-        //@include easeOut();
         i {
           @include hLink();
           @include easeOut();
@@ -46,14 +49,4 @@ body {
       }
     }
   }
-}
-
-.showcase {
-  border: solid;
-  border-color: $thirdary-color;
-  border-radius: 25px;
-  width: 80%;
-  margin: auto;
-  margin-top: 10vh;
-  padding: 2rem;
 }
