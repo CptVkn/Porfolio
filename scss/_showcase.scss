@@ -9,6 +9,16 @@
   margin: auto;
   margin-top: 7.5vh;
   padding: 2rem;
+
+  .home {
+    position: absolute;
+    visibility: hidden;
+    &.show {
+      visibility: visible;
+      position: relative;
+    }
+  }
+
   .projects {
     position: absolute;
     visibility: hidden;
@@ -17,7 +27,27 @@
       position: relative;
     }
   }
+
+  .branch {
+    position: absolute;
+    visibility: hidden;
+    &.show {
+      visibility: visible;
+      position: relative;
+    }
+  }
+  
+
   .resume {
+    position: absolute;
+    visibility: hidden;
+    &.show {
+      visibility: visible;
+      position: relative;
+    }
+  }
+
+  .about {
     position: absolute;
     visibility: hidden;
     &.show {

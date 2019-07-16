@@ -34,27 +34,38 @@
     </header>
 
     <nav class="menu">
-      <a href="#!">
+      <a id="menuBtn" href="#!">
         <i class="fas fa-align-justify fa-2x"></i>
       </a>
-      <a href="#!">
+      <a id="menuBtn" href="#!">
         <i class="fas fa-code fa-2x"></i>
       </a>
-      <a href="#!">
+      <a id="menuBtn" href="#!">
         <i class="fas fa-code-branch fa-2x"></i>
       </a>
-      <a href="#!">
+      <a id="menuBtn" href="#!">
         <i class="fas fa-file-alt fa-2x"></i>
       </a>
-      <a href="#!">
+      <a id="menuBtn" href="#!">
         <i class="fas fa-user fa-2x"></i>
       </a>
     </nav>
     <div class="showcase">
-      <div class="Home"><div data-include="home.html"></div></div>
-      <div class="projects "><div data-include="projects.html"></div></div>
-      <div class="resume show"><div data-include="resume.html"></div></div>
-      <div class="about"><div data-include="about.html"></div></div>
+      <div id="pages" class="home show">
+        <div data-include="home.html"></div>
+      </div>
+      <div id="pages" class="projects">
+        <div data-include="projects.html"></div>
+      </div>
+      <div id="pages" class="branch">
+        <div data-include="about.html"></div>
+      </div>
+      <div id="pages" class="resume">
+        <div data-include="resume.html"></div>
+      </div>
+      <div id="pages" class="about">
+        <div data-include="about.html"></div>
+      </div>
     </div>
 
     <script src="js/main.js"></script>

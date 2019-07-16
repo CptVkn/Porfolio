@@ -25,9 +25,53 @@
         transition: all 0.75s ease-out; }
 
 .showcase .resume {
-  background: blue;
-  position: absolute;
-  visibility: hidden; }
+  /* --- Skills --- */
+  /* --- Education ---*/
+  /* --- Experience --- */ }
+  .showcase .resume .areaHeader {
+    font-size: 30px; }
+  .showcase .resume #Technical_Skills {
+    width: 49%;
+    float: left;
+    text-align: left; }
+  .showcase .resume #Career_Skills {
+    width: 49%;
+    float: right;
+    text-align: left; }
+  .showcase .resume #Technical_Skills ul {
+    padding-left: 2%;
+    padding-right: 7%;
+    list-style: none;
+    float: left;
+    text-align: left; }
+  .showcase .resume #Career_Skills ul {
+    padding-left: 2%;
+    list-style: none;
+    float: center;
+    text-align: left; }
+  .showcase .resume #education h3 {
+    margin: 0; }
+  .showcase .resume #education p {
+    display: inline;
+    color: grey; }
+  .showcase .resume #education ul {
+    margin: 0;
+    padding-left: 2%;
+    list-style: none; }
+  .showcase .resume #experience h2 {
+    margin: 0;
+    margin-top: 2%;
+    font-size: 20px; }
+  .showcase .resume #experience h3 {
+    margin: 0; }
+  .showcase .resume #experience p {
+    display: inline;
+    color: grey; }
+  .showcase .resume #experience ul {
+    list-style: box;
+    padding: 0;
+    padding-left: 5%;
+    margin: 0; }
 
 .showcase {
   background: #d1cfcf;
@@ -38,16 +82,34 @@
   margin: auto;
   margin-top: 7.5vh;
   padding: 2rem; }
+  .showcase .home {
+    position: absolute;
+    visibility: hidden; }
+    .showcase .home.show {
+      visibility: visible;
+      position: relative; }
   .showcase .projects {
     position: absolute;
     visibility: hidden; }
     .showcase .projects.show {
       visibility: visible;
       position: relative; }
+  .showcase .branch {
+    position: absolute;
+    visibility: hidden; }
+    .showcase .branch.show {
+      visibility: visible;
+      position: relative; }
   .showcase .resume {
     position: absolute;
     visibility: hidden; }
     .showcase .resume.show {
+      visibility: visible;
+      position: relative; }
+  .showcase .about {
+    position: absolute;
+    visibility: hidden; }
+    .showcase .about.show {
       visibility: visible;
       position: relative; }
 
@@ -58,7 +120,7 @@
 
 body {
   position: relative;
-  height: 100%;
+  height: 3000px;
   background: #d1cfcf;
   font-family: Roboto Mono;
   line-height: 1.5;
