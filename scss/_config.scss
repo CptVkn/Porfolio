@@ -1,0 +1,12 @@
+$primary-color: rgb(209, 207, 207);
+$secondary-color: rgb(5, 104, 150);
+$thirdary-color: rgb(94, 94, 94);
+$background-opacity: 0.9;
+
+@mixin easeOut {
+  transition: all 0.75s ease-out;
+}
+
+@mixin hLink {
+  transform: scale(1.3);
+}

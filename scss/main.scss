@@ -1,6 +1,59 @@
-$primary-color: rgb(209, 207, 207);
-$secondary-color: rgb(5, 104, 150);
+@import "config";
+@import "menu";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background: $primary-color;
+  height: 100%;
+  font-family: Roboto Mono;
+  line-height: 1.5;
+}
+
+.header {
+  color: $thirdary-color;
+  margin-left: 5vh;
+  margin-top: 1vh;
+
+  .headerName {
+    font-size: 5rem;
+    font-weight: 500;
+
+    .headerLastName {
+      color: $secondary-color;
+    }
+  }
+
+  .icons {
+    position: relative;
+    margin-top: 0;
+    cursor: pointer;
+    a {
+      color: $thirdary-color;
+      padding: 0.7rem;
+      text-decoration: none;
+      &:hover {
+        color: $secondary-color;
+        //@include easeOut();
+        i {
+          @include hLink();
+          @include easeOut();
+        }
+      }
+    }
+  }
+}
+
+.showcase {
+  border: solid;
+  border-color: $thirdary-color;
+  border-radius: 25px;
+  width: 80%;
+  margin: auto;
+  margin-top: 10vh;
+  padding: 2rem;
 }

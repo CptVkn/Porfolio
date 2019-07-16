@@ -1,0 +1,29 @@
+.menu {
+  position: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  width: 80px;
+  height: 325px;
+  left: 5vh;
+  top: 30vh;
+  border: solid;
+  border-color: $thirdary-color;
+  border-radius: 10px;
+  color: $thirdary-color;
+
+  a {
+    padding: 0.7rem 0;
+    color: $thirdary-color;
+    text-decoration: none;
+    &:hover {
+      color: $secondary-color;
+      i {
+        @include hLink();
+        @include easeOut();
+      }
+    }
+  }
+}
