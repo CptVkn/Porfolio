@@ -33,3 +33,12 @@ $background-opacity: 0.9;
     }
   }
 }
+
+@mixin showcaseToggle {
+  position: absolute;
+  visibility: hidden;
+  &.show {
+    position: relative;
+    visibility: visible;
+  }
+}

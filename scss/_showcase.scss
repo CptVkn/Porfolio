@@ -1,4 +1,5 @@
 @import "showcaseResume";
+@import "showcaseContactMe";
 
 .showcase {
   background: rgba($primary-color, 1);
@@ -6,53 +7,31 @@
   border-color: $thirdary-color;
   border-radius: 25px;
   width: 80%;
-  margin: auto;
+
+  margin-left: 150px;
+  margin-right: 50px;
   margin-top: 7.5vh;
   padding: 2rem;
 
+  overflow: hidden;
+
   .home {
-    position: absolute;
-    visibility: hidden;
-    &.show {
-      visibility: visible;
-      position: relative;
-    }
+    @include showcaseToggle;
   }
 
   .projects {
-    position: absolute;
-    visibility: hidden;
-    &.show {
-      visibility: visible;
-      position: relative;
-    }
+    @include showcaseToggle;
   }
 
   .branch {
-    position: absolute;
-    visibility: hidden;
-    &.show {
-      visibility: visible;
-      position: relative;
-    }
+    @include showcaseToggle;
   }
-  
 
   .resume {
-    position: absolute;
-    visibility: hidden;
-    &.show {
-      visibility: visible;
-      position: relative;
-    }
+    @include showcaseToggle;
   }
 
-  .about {
-    position: absolute;
-    visibility: hidden;
-    &.show {
-      visibility: visible;
-      position: relative;
-    }
+  .contactme {
+    @include showcaseToggle;
   }
 }

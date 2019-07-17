@@ -12,12 +12,12 @@ menuBtn.forEach(function(menuBtns, index) {
   //console.log(showMenu[index]);
   menuBtns.addEventListener("click", function() {
     for (let i = 0; i < showMenu.length; i++) {
-      if (!showMenu[index]) {
-        pages[index].classList.add("show");
-        showMenu[index] = true;
+      if (i == index) {
+        pages[i].classList.add("show");
+        showMenu[i] = true;
       } else {
-        pages[index].classList.remove("show");
-        showMenu[index] = false;
+        pages[i].classList.remove("show");
+        showMenu[i] = false;
       }
     }
   });
