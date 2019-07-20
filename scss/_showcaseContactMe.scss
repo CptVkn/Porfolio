@@ -1,4 +1,57 @@
 .showcase {
-  .contactme {
+  .contactMe {
+    .contact {
+      display: flex;
+      flex-flow: column inline;
+      .areaHeader {
+        font-size: 25px;
+      }
+      &-Info {
+        width: 50%;
+        h1 {
+          font-size: 20px;
+        }
+        //
+        //
+        //
+      }
+      &-Message {
+        width: 50%;
+        h1 {
+          margin-bottom: 2vh;
+          font-size: 20px;
+        }
+        h4 {
+          font-size: 16px;
+          font-weight: normal;
+        }
+        .field,
+        .message,
+        .submit {
+          padding: 1vh;
+          margin-bottom: 2vh;
+          width: 100%;
+          border-radius: 5px;
+          border: 1px solid $thirdary-color;
+        }
+        .message {
+          resize: vertical;
+          overflow: hidden;
+        }
+        .submit {
+          font-size: 16px;
+          border: none;
+          background: $secondary-color;
+          color: $primary-color;
+          &:hover {
+            background: lighten($secondary-color, 10%);
+            @include easeOut();
+          }
+          &:active {
+            background: darken($secondary-color, 20%);
+          }
+        }
+      }
+    }
   }
 }

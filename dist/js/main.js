@@ -2,14 +2,10 @@ const menuBtns = document.querySelectorAll("#menuBtn");
 const pages = document.querySelectorAll("#pages");
 const menuBtn = [].slice.call(menuBtns);
 
-// Set INitail State Of Menu \\
+// Set Initail State Of Menu \\
 var showMenu = [true, false, false, false, false];
 
-//console.log(menuBtn);
-//console.log(menu);
-
 menuBtn.forEach(function(menuBtns, index) {
-  //console.log(showMenu[index]);
   menuBtns.addEventListener("click", function() {
     for (let i = 0; i < showMenu.length; i++) {
       if (i == index) {
@@ -20,5 +16,32 @@ menuBtn.forEach(function(menuBtns, index) {
         showMenu[i] = false;
       }
     }
+    if (showMenu[4] == true) {
+      mailEventListener();
+    }
   });
 });
+
+// -- mail event handler --\\
+function mailEventListener() {
+  const ContactMeForm = document.querySelector("#contactForm");
+
+  ContactMeForm.addEventListener("submit", e => {
+    e.preventDefault();
+    console.log("Submitted!");
+  });
+}
+
+// ContactMeForm.submitForm({
+//   cURL:
+//     "mailto: " +
+//     email +
+//     "?subject=" +
+//     subject +
+//     "&body=You can also input some standard text to appear in the body of the email.",
+//   cSubmitAs: "PDF",
+//   cCharset: "utf-8"
+// });
+
+// var email = "kevinarlynswenson@gmail.com";
+// var subject = "Website Submission";

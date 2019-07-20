@@ -5,12 +5,10 @@
   background: rgba($primary-color, 1);
   border: solid;
   border-color: $thirdary-color;
-  border-radius: 25px;
+  border-radius: 10px;
   width: 80%;
 
-  margin-left: 150px;
-  margin-right: 50px;
-  margin-top: 7.5vh;
+  margin: 7.5vh auto;
   padding: 2rem;
 
   overflow: hidden;
@@ -31,7 +29,7 @@
     @include showcaseToggle;
   }
 
-  .contactme {
+  .contactMe {
     @include showcaseToggle;
   }
 }
