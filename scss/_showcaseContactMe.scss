@@ -5,23 +5,42 @@
       flex-flow: column inline;
       .areaHeader {
         font-size: 25px;
+        margin-bottom: 2vh;
       }
       &-Info {
         width: 50%;
-        h1 {
-          font-size: 20px;
+
+        a {
+          display: flex;
+          display: column wrap;
+          padding: 4%;
+
+          text-decoration: none;
+          color: $thirdary-color;
+          i {
+            padding-right: 5%;
+            transform: scale(0.8);
+          }
+          &:hover {
+            color: $secondary-color;
+            @include easeOut();
+          }
         }
-        //
-        //
-        //
+        .phone_number,
+        .email {
+          width: 70%;
+          border-bottom: solid 1px;
+          border-color: $secondary-color;
+        }
+        .website {
+          width: 70%;
+        }
       }
-      &-Message {
+
+      &-Form {
         width: 50%;
-        h1 {
-          margin-bottom: 2vh;
-          font-size: 20px;
-        }
-        h4 {
+
+        label {
           font-size: 16px;
           font-weight: normal;
         }
@@ -37,6 +56,10 @@
         .message {
           resize: vertical;
           overflow: hidden;
+        }
+        .successMessage {
+          color: green;
+          visibility: hidden;
         }
         .submit {
           font-size: 16px;

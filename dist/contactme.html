@@ -10,30 +10,67 @@
     <div class="contact">
       <div class="contact-Info">
         <h1 class="areaHeader">CONTACT INFO</h1>
-        <div class="name">
-          name
-        </div>
         <div class="email">
-          email
+          <a href="mailto:kevinarlynswenson@gmail.com" class="emailaddress">
+            <i class="fas fa-envelope fa-2x"></i>
+            kevinarlynswenson@gmail.com
+          </a>
         </div>
         <div class="phone_number">
-          phone number
+          <a href="tel:712-363-1215" class="phonenumber">
+            <i class="fas fa-phone fa-2x"></i>
+            712-363-1215
+          </a>
         </div>
-        <div class="company">
-          website
+        <div class="website">
+          <a href="index.html" class="website">
+            <i class="fas fa-chalkboard-teacher fa-2x"></i>
+            kevinswenson.com
+          </a>
         </div>
       </div>
 
-      <form id="contactForm" class="contact-Message">
+      <form
+        id="contactForm"
+        class="contact-Form"
+        target="hidden_iframe"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdsMgmUH1Q6P4JAo_KR0_bYZN5vffSixptjILCkQ3aDjJ9jnw/formResponse?"
+      >
         <h1 class="areaHeader">SEND ME A MESSAGE</h1>
-        <h4 class="title">Your Name</h4>
-        <input type="text" class="field" /><br />
-        <h4 class="title">Email Address</h4>
-        <input type="text" class="field" /><br />
-        <h4 class="title">Message</h4>
-        <textarea type="text" class="message" /></textarea>
-        <input value ="Submit" type="submit" class="submit" />
+        <label class="title" for="entry.1128540512">Your Name</label>
+        <input
+          class="field"
+          name="entry.1128540512"
+          id="entry.1128540512"
+          type="text"
+        /><br />
+        <label class="title" for="entry.144918738">Email Address</label>
+        <input
+          class="field"
+          name="entry.144918738"
+          id="entry.144918738"
+          type="text"
+        /><br />
+        <label class="title" for="entry.752750620">Message</label>
+        <textarea
+          class="message"
+          name="entry.752750620"
+          id="entry.752750620"
+          type="text"
+        ></textarea>
+        <p id="successMessage" class="successMessage">
+          *Thank-you for you submission*
+        </p>
+        <input id="submit" class="submit" value="Submit" type="submit" />
       </form>
+
+      <iframe
+        id="hidden_iframe"
+        name="hidden_iframe"
+        class="hidden_iframe"
+        style="display: none"
+        onload="if(contactSubmitted){}"
+      ></iframe>
     </div>
   </body>
 </html>

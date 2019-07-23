@@ -1,0 +1,15 @@
+.showcase {
+  .projects {
+    color: $thirdary-color;
+
+    .yahtzee,
+    .snake,
+    .csharpproject {
+      padding: 4%;
+      margin: 1% 0;
+
+      border: solid 2px $secondary-color;
+      border-radius: 10px;
+    }
+  }
+}

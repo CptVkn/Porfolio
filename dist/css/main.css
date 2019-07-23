@@ -7,7 +7,7 @@
   justify-content: center;
   padding: 1rem 0;
   width: 60px;
-  height: 325px;
+  height: 265px;
   left: 40px;
   top: 225px;
   border: solid;
@@ -78,40 +78,68 @@
   display: flex;
   flex-flow: column inline; }
   .showcase .contactMe .contact .areaHeader {
-    font-size: 25px; }
+    font-size: 25px;
+    margin-bottom: 2vh; }
   .showcase .contactMe .contact-Info {
     width: 50%; }
-    .showcase .contactMe .contact-Info h1 {
-      font-size: 20px; }
-  .showcase .contactMe .contact-Message {
+    .showcase .contactMe .contact-Info a {
+      display: flex;
+      display: column wrap;
+      padding: 4%;
+      text-decoration: none;
+      color: #5e5e5e; }
+      .showcase .contactMe .contact-Info a i {
+        padding-right: 5%;
+        transform: scale(0.8); }
+      .showcase .contactMe .contact-Info a:hover {
+        color: #056896;
+        transition: all 0.75s ease-out; }
+    .showcase .contactMe .contact-Info .phone_number,
+    .showcase .contactMe .contact-Info .email {
+      width: 70%;
+      border-bottom: solid 1px;
+      border-color: #056896; }
+    .showcase .contactMe .contact-Info .website {
+      width: 70%; }
+  .showcase .contactMe .contact-Form {
     width: 50%; }
-    .showcase .contactMe .contact-Message h1 {
-      margin-bottom: 2vh;
-      font-size: 20px; }
-    .showcase .contactMe .contact-Message h4 {
+    .showcase .contactMe .contact-Form label {
       font-size: 16px;
       font-weight: normal; }
-    .showcase .contactMe .contact-Message .field,
-    .showcase .contactMe .contact-Message .message,
-    .showcase .contactMe .contact-Message .submit {
+    .showcase .contactMe .contact-Form .field,
+    .showcase .contactMe .contact-Form .message,
+    .showcase .contactMe .contact-Form .submit {
       padding: 1vh;
       margin-bottom: 2vh;
       width: 100%;
       border-radius: 5px;
       border: 1px solid #5e5e5e; }
-    .showcase .contactMe .contact-Message .message {
+    .showcase .contactMe .contact-Form .message {
       resize: vertical;
       overflow: hidden; }
-    .showcase .contactMe .contact-Message .submit {
+    .showcase .contactMe .contact-Form .successMessage {
+      color: green;
+      visibility: hidden; }
+    .showcase .contactMe .contact-Form .submit {
       font-size: 16px;
       border: none;
       background: #056896;
       color: #d1cfcf; }
-      .showcase .contactMe .contact-Message .submit:hover {
+      .showcase .contactMe .contact-Form .submit:hover {
         background: #078ac7;
         transition: all 0.75s ease-out; }
-      .showcase .contactMe .contact-Message .submit:active {
+      .showcase .contactMe .contact-Form .submit:active {
         background: #022433; }
+
+.showcase .projects {
+  color: #5e5e5e; }
+  .showcase .projects .yahtzee,
+  .showcase .projects .snake,
+  .showcase .projects .csharpproject {
+    padding: 4%;
+    margin: 1% 0;
+    border: solid 2px #056896;
+    border-radius: 10px; }
 
 .showcase {
   background: #d1cfcf;

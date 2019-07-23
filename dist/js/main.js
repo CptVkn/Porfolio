@@ -4,6 +4,7 @@ const menuBtn = [].slice.call(menuBtns);
 
 // Set Initail State Of Menu \\
 var showMenu = [true, false, false, false, false];
+var contactSubmitted = false;
 
 menuBtn.forEach(function(menuBtns, index) {
   menuBtns.addEventListener("click", function() {
@@ -17,31 +18,47 @@ menuBtn.forEach(function(menuBtns, index) {
       }
     }
     if (showMenu[4] == true) {
-      mailEventListener();
+      formSubmitListener();
+    } else {
+      successMessage.style.visibility = "hidden";
     }
   });
 });
 
-// -- mail event handler --\\
-function mailEventListener() {
+// -- FormSubmit event handler --\\
+function formSubmitListener() {
   const ContactMeForm = document.querySelector("#contactForm");
+  const successMessage = document.querySelector("#successMessage");
+  const submitBtn = document.querySelector("#submit");
+  const textFields = document.querySelectorAll(".field");
+  const textTitles = document.querySelectorAll(".title");
+
+  console.log(textFields);
+  console.log(textTitles);
 
   ContactMeForm.addEventListener("submit", e => {
-    e.preventDefault();
-    console.log("Submitted!");
+    if (textFields[0].value.length < 1) {
+      textTitles[0].style.color = "red";
+      textFields[0].placeholder = "Please Enter Your Name";
+
+      textTitles[1].style.color = "black";
+      e.preventDefault();
+    } else if (textFields[1].value == "") {
+      textTitles[0].style.color = "black";
+      textTitles[1].style.color = "red";
+      textFields[1].placeholder = "Please Enter Email Your Address";
+      e.preventDefault();
+    } else {
+      textTitles[0].style.color = "black";
+      textTitles[1].style.color = "black";
+
+      successMessage.style.visibility = "visible";
+
+      submitBtn.disabled = true;
+      submitBtn.style.background = "grey";
+
+      contactSubmitted = true;
+      console.log("Submitted!");
+    }
   });
 }
-
-// ContactMeForm.submitForm({
-//   cURL:
-//     "mailto: " +
-//     email +
-//     "?subject=" +
-//     subject +
-//     "&body=You can also input some standard text to appear in the body of the email.",
-//   cSubmitAs: "PDF",
-//   cCharset: "utf-8"
-// });
-
-// var email = "kevinarlynswenson@gmail.com";
-// var subject = "Website Submission";
