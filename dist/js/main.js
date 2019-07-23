@@ -3,7 +3,7 @@ const pages = document.querySelectorAll("#pages");
 const menuBtn = [].slice.call(menuBtns);
 
 // Set Initail State Of Menu \\
-var showMenu = [true, false, false, false, false];
+var showMenu = [true, false, false, false];
 var contactSubmitted = false;
 
 menuBtn.forEach(function(menuBtns, index) {
@@ -17,7 +17,7 @@ menuBtn.forEach(function(menuBtns, index) {
         showMenu[i] = false;
       }
     }
-    if (showMenu[4] == true) {
+    if (showMenu[3] == true) {
       formSubmitListener();
     } else {
       successMessage.style.visibility = "hidden";
@@ -40,7 +40,6 @@ function formSubmitListener() {
     if (textFields[0].value.length < 1) {
       textTitles[0].style.color = "red";
       textFields[0].placeholder = "Please Enter Your Name";
-
       textTitles[1].style.color = "black";
       e.preventDefault();
     } else if (textFields[1].value == "") {

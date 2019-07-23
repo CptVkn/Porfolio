@@ -21,30 +21,37 @@ body {
 .header {
   color: $thirdary-color;
   margin-left: 5vh;
-  margin-top: 1vh;
 
   .headerName {
     font-size: 5rem;
     font-weight: 500;
-
-    .headerLastName {
-      color: $secondary-color;
-    }
+    word-spacing: -1.5rem;
+    color: $secondary-color;
   }
-
   .icons {
     position: relative;
     margin-top: 0;
+
     cursor: pointer;
     a {
       color: $thirdary-color;
-      padding: 0.7rem;
+      padding: 0.5rem;
       text-decoration: none;
+      display: inline-flex;
+      flex-flow: column wrap;
+
+      span {
+        width: 100%;
+        visibility: hidden;
+      }
       &:hover {
         color: $secondary-color;
         i {
           @include hLink();
           @include easeOut();
+        }
+        span {
+          visibility: visible;
         }
       }
       i {
