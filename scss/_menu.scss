@@ -7,7 +7,7 @@
   justify-content: center;
 
   width: 60px;
-  height: 275px;
+  height: 265px;
   left: 40px;
   top: 225px;
   border: solid;
@@ -17,52 +17,50 @@
   box-sizing: content-box;
   z-index: 5;
 
-  a {
+  div.menuBtn {
     float: left;
     flex-flow: column inline;
     width: 160px;
-    color: $thirdary-color;
-    text-decoration: none;
 
-    i {
-      width: 30%;
-      height: 100%;
-      float: left;
-      text-align: left;
-      padding: 1rem;
-    }
     span {
-      width: 70%;
+      width: 68%;
       height: 100%;
       float: left;
       text-align: left;
       z-index: -2;
-
-      visibility: hidden;
+      display: none;
     }
 
-    &:hover {
-      color: $secondary-color;
+    a {
+      width: 32%;
+      height: 100%;
+      float: left;
+      text-align: left;
+      color: $thirdary-color;
+      text-decoration: none;
+
       i {
-        @include hLink();
-        @include easeOut();
-        // border: solid 1px;
-        // border-radius: 5px;
+        padding: 1rem;
+        transform: scale(0.8);
       }
-      span {
+
+      &:hover {
+        color: $secondary-color;
+        i {
+          @include hLink();
+          @include easeOut();
+        }
+      }
+
+      &:hover + span {
+        display: inline;
         padding: 1rem;
         background: $primary-color;
-        background-attachment: fixed;
-        color: $thirdary-color;
-        visibility: visible;
-        z-index: 5;
+        z-index: 999;
         border: solid 2px;
         border-radius: 5px;
         @include easeOut();
       }
-    }
-    i {
-      transform: scale(0.8);
     }
   }
 }
