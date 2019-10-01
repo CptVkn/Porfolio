@@ -9,11 +9,9 @@
 }
 
 body {
-  position: relative;
-  height: 3000px;
   @include background();
-  background: $primary-color;
-  font-family: Roboto Mono;
+  font-family: "Roboto Mono", monospace;
+
   line-height: 1.5;
   font-size: 1em;
 }
