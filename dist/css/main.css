@@ -156,18 +156,20 @@
 
 .showcase .projects {
   color: #5e5e5e; }
-  .showcase .projects .yahtzee,
-  .showcase .projects .snake,
-  .showcase .projects .csharpproject {
-    width: 80%;
+  .showcase .projects #yahtzee,
+  .showcase .projects #todoApp {
+    width: 100%;
     padding: 4%;
     margin: 1% 0;
     border: solid 2px #056896;
     border-radius: 10px; }
-    .showcase .projects .yahtzee p,
-    .showcase .projects .snake p,
-    .showcase .projects .csharpproject p {
+    .showcase .projects #yahtzee p,
+    .showcase .projects #todoApp p {
       font-size: 12px; }
+  .showcase .projects a {
+    text-decoration: none; }
+    .showcase .projects a .projectHeader {
+      color: #333; }
 
 .showcase {
   background: #d1cfcf;
@@ -210,6 +212,26 @@
       position: relative;
       visibility: visible; }
 
+@media screen and (min-width: 1171px) {
+  .menu {
+    left: 20px;
+    top: 32vh; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .menu {
+    left: 20px;
+    top: 32vh; } }
+
+@media screen and (max-width: 1000px) {
+  .menu {
+    left: 0px;
+    top: 32vh; } }
+
+@media screen and (max-width: 652px) {
+  .menu {
+    left: 0px;
+    top: 50vh; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -218,18 +240,18 @@
 body {
   font-family: "Roboto Mono", monospace;
   line-height: 1.5;
-  font-size: 1em; }
+  font-size: 1rem; }
   body#bg-img {
     background: url(../img/background.PNG) no-repeat center center fixed;
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
       content: "";
-      position: fixed;
+      position: absolute;
       top: 0;
       right: 0;
       width: 100%;
-      height: 100%;
+      height: 3000px;
       z-index: -1;
       background: rgba(209, 207, 207, 0.9); }
 

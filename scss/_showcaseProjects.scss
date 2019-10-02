@@ -2,17 +2,23 @@
   .projects {
     color: $thirdary-color;
 
-    .yahtzee,
-    .snake,
-    .csharpproject {
-      width: 80%;
+    #yahtzee,
+    #todoApp {
+      width: 100%;
       padding: 4%;
       margin: 1% 0;
 
       border: solid 2px $secondary-color;
       border-radius: 10px;
+
       p {
         font-size: 12px;
+      }
+    }
+    a {
+      text-decoration: none;
+      .projectHeader {
+        color: #333;
       }
     }
   }

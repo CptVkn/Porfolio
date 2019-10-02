@@ -1,0 +1,30 @@
+// Wide Screens
+@include mediaXL {
+  .menu {
+    left: 20px;
+    top: 32vh;
+  }
+}
+
+// Desktops
+@include mediaLg {
+  .menu {
+    left: 20px;
+    top: 32vh;
+  }
+}
+
+// Tablets & Small Labtops
+@include mediaMd {
+  .menu {
+    left: 0px;
+    top: 32vh;
+  }
+}
+// Phones
+@include mediaSm {
+  .menu {
+    left: 0px;
+    top: 50vh;
+  }
+}
