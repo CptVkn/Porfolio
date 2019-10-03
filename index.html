@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="js/csi.js"></script>
+    <script src="https://kit.fontawesome.com/31c9b7f30f.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Portfolio-KevinSwenson</title>
+  </head>
+  <body id="bg-img">
+    <header class="header">
+      <h1 class="headerName">
+        Kevin <span class="headerLastName">Swenson</span>
+      </h1>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/kevin-swenson-63736b18b/">
+          <i class="fab fa-linkedin fa-2x"></i>
+          <span class="hoverText">LinkedIn</span>
+        </a>
+        <a href="https://github.com/CptVkn">
+          <i class="fab fa-github fa-2x"></i>
+          <span class="hoverText">GitHub</span>
+        </a>
+        <a href="https://twitter.com/cptvkn">
+          <i class="fab fa-twitter fa-2x"></i>
+          <span class="hoverText">Twitter</span>
+        </a>
+        <a href="https://www.facebook.com/Cpt.Vekin">
+          <i class="fab fa-facebook fa-2x"></i>
+          <span class="hoverText">Facebook</span>
+        </a>
+      </div>
+    </header>
+
+    <nav class="menu">
+      <div class="menuBtn">
+        <a id="menuBtn" href="#!">
+          <i class="fas fa-align-justify fa-2x"></i>
+        </a>
+        <span>Home</span>
+      </div>
+      <div class="menuBtn">
+        <a id="menuBtn" href="#!">
+          <i class="fas fa-file-code fa-2x"></i>
+        </a>
+        <span>Projects</span>
+      </div>
+      <div class="menuBtn">
+        <a id="menuBtn" href="#!">
+          <i class="fas fa-file-alt fa-2x"></i>
+        </a>
+        <span>Resume</span>
+      </div>
+      <div class="menuBtn">
+        <a id="menuBtn" href="#!">
+          <i class="fas fa-user fa-2x"></i>
+        </a>
+        <span>Contact</span>
+      </div>
+    </nav>
+
+    <div class="showcase">
+      <div id="pages" class="home show">
+        <div data-include="home.html"></div>
+      </div>
+      <div id="pages" class="projects">
+        <div data-include="projects.html"></div>
+      </div>
+      <div id="pages" class="resume">
+        <div data-include="resume.html"></div>
+      </div>
+      <div id="pages" class="contactMe">
+        <div data-include="contactme.html"></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
