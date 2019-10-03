@@ -186,6 +186,16 @@
     .showcase .projects #todoApp p {
       font-size: 12px; }
 
+.showcase .title {
+  color: #056896;
+  margin: 3%; }
+
+.showcase .dis {
+  display: flex;
+  color: #5e5e5e;
+  margin: 3%;
+  width: 80%; }
+
 .showcase {
   background: #d1cfcf;
   border: solid;

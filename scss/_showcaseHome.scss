@@ -1,8 +1,12 @@
 .showcase {
   .title {
     color: $secondary-color;
+    margin: 3%;
   }
   .dis {
+    display: flex;
     color: $thirdary-color;
+    margin: 3%;
+    width: 80%;
   }
 }
