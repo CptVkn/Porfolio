@@ -51,40 +51,52 @@
 
 .showcase .resume {
   /* --- Skills --- */
-  /* --- Education ---*/
-  /* --- Experience --- */ }
+  /* --- education ---*/
+  /* --- projects --- */ }
   .showcase .resume .areaHeader {
     font-size: 30px; }
   .showcase .resume .skills {
-    display: flex;
-    flex-flow: column inline; }
+    flex-flow: column; }
     .showcase .resume .skills-technical {
-      width: 50%;
+      width: 100%;
       float: left;
       text-align: left; }
       .showcase .resume .skills-technical ul {
+        margin-bottom: 2rem;
         padding-left: 2%;
         padding-right: 7%;
         list-style: none;
         float: left;
         text-align: left; }
     .showcase .resume .skills-career {
-      width: 50%;
-      float: right;
+      width: 100%;
+      float: left;
       text-align: left; }
       .showcase .resume .skills-career ul {
+        margin-bottom: 2rem;
         padding-left: 2%;
         list-style: none;
         float: left;
         text-align: left; }
   .showcase .resume .education {
-    margin-top: 2rem; }
+    margin-top: 0; }
     .showcase .resume .education p {
       display: inline;
       color: grey; }
     .showcase .resume .education ul {
       padding-left: 2%;
       list-style: none; }
+  .showcase .resume .areaprojects {
+    margin-top: 2rem; }
+    .showcase .resume .areaprojects h2 {
+      font-size: 20px; }
+    .showcase .resume .areaprojects p {
+      display: inline;
+      color: grey; }
+    .showcase .resume .areaprojects ul {
+      list-style: box;
+      padding-left: 5%;
+      margin-bottom: 2%; }
   .showcase .resume .experience {
     margin-top: 2rem; }
     .showcase .resume .experience h2 {
@@ -95,7 +107,7 @@
     .showcase .resume .experience ul {
       list-style: box;
       padding-left: 5%;
-      margin-bottom: 5%; }
+      margin-bottom: 2%; }
 
 .showcase .contactMe .contact {
   display: flex;
@@ -163,13 +175,16 @@
     margin: 1% 0;
     border: solid 2px #056896;
     border-radius: 10px; }
+    .showcase .projects #yahtzee .projectHeader,
+    .showcase .projects #todoApp .projectHeader {
+      color: #333; }
+      .showcase .projects #yahtzee .projectHeader a,
+      .showcase .projects #todoApp .projectHeader a {
+        color: #5e5e5e;
+        text-decoration: none; }
     .showcase .projects #yahtzee p,
     .showcase .projects #todoApp p {
       font-size: 12px; }
-  .showcase .projects a {
-    text-decoration: none; }
-    .showcase .projects a .projectHeader {
-      color: #333; }
 
 .showcase {
   background: #d1cfcf;
@@ -217,17 +232,17 @@
     left: 20px;
     top: 32vh; } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 999px) and (max-width: 1170px) {
   .menu {
     left: 20px;
     top: 32vh; } }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 999px) {
   .menu {
     left: 0px;
     top: 32vh; } }
 
-@media screen and (max-width: 652px) {
+@media screen and (max-width: 655px) {
   .menu {
     left: 0px;
     top: 50vh; } }

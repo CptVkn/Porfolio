@@ -5,14 +5,14 @@
     }
     /* --- Skills --- */
     .skills {
-      display: flex;
-      flex-flow: column inline;
+      flex-flow: column;
       &-technical {
-        width: 50%;
+        width: 100%;
         float: left;
         text-align: left;
 
         ul {
+          margin-bottom: 2rem;
           padding-left: 2%;
           padding-right: 7%;
           list-style: none;
@@ -21,11 +21,12 @@
         }
       }
       &-career {
-        width: 50%;
-        float: right;
+        width: 100%;
+        float: left;
         text-align: left;
 
         ul {
+          margin-bottom: 2rem;
           padding-left: 2%;
           list-style: none;
           float: left;
@@ -34,16 +35,9 @@
       }
     }
 
-    // .breakline {
-    //   position: relative;
-    //   width: 80%;
-    //   height: 5px;
-    //   margin: 0 5px 0 0;
-    //   background: $thirdary-color;
-    // }
-    /* --- Education ---*/
+    /* --- education ---*/
     .education {
-      margin-top: 2rem;
+      margin-top: 0;
       p {
         display: inline;
         color: grey;
@@ -54,7 +48,23 @@
       }
     }
 
-    /* --- Experience --- */
+    /* --- projects --- */
+    .areaprojects {
+      margin-top: 2rem;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        display: inline;
+        color: grey;
+      }
+      ul {
+        list-style: box;
+        padding-left: 5%;
+        margin-bottom: 2%;
+      }
+    }
+
     .experience {
       margin-top: 2rem;
 
@@ -68,7 +78,7 @@
       ul {
         list-style: box;
         padding-left: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
       }
     }
   }

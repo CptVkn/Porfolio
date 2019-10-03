@@ -10,15 +10,16 @@
 
       border: solid 2px $secondary-color;
       border-radius: 10px;
+      .projectHeader {
+        color: #333;
+        a {
+          color: $thirdary-color;
+          text-decoration: none;
+        }
+      }
 
       p {
         font-size: 12px;
-      }
-    }
-    a {
-      text-decoration: none;
-      .projectHeader {
-        color: #333;
       }
     }
   }
